@@ -24,7 +24,7 @@ And then sectioned in 4 parts:
     w                : move up in the current section
     Enter            : open the selected element
     '/'              : search in the current section
-    c                : compress the item currently selected
+    c                : compress the item currently selected - (**currently not working**)
     1-9              : select the n-th item in the current section
     r                : rename the item currently selected
     m                : Move the item currently selected to the other folder open
@@ -41,11 +41,10 @@ usage: hse.py [-h] [-l LOG] [-c CONFIG] [-o OUTPUT] [-c1 COMPRESS_LEVEL] [-c4 {l
 
 options:
   -h, --help            show this help message and exit
-  -l LOG, --log LOG     Path to the log file
+  -l LOG, --log LOG     Path to the log file (if not specified it'll display the errors directly in the terminal)
   -c CONFIG, --config CONFIG
                         configuration file to use
-  -o OUTPUT, --output OUTPUT
-                        Path to the output file
+
   -c1 COMPRESS_LEVEL, --compress-level COMPRESS_LEVEL
                         level of compression
   -c4 {lz4,bz2,gzip,zlib}, --compress-algorithm {lz4,bz2,gzip,zlib}
